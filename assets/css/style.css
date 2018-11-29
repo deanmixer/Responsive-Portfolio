@@ -28,13 +28,12 @@ header {
 .headercontent {
 	width: 91%;
 	max-width: 960px;
-	margin: auto;
+	margin: 0% 8% 0% 8%;
 }
 
 p {
 	line-height: 30px;
 	margin-bottom: 15px;
-
 }
 
 h2.namebox {
@@ -45,7 +44,6 @@ h2.namebox {
     font-size: 2em;
     font-weight: bold;
     padding: 25px;
-
 }
 
 .link {
@@ -71,9 +69,9 @@ div.sticky {
 
 div.maincontent {
 	clear: both;
-	max-width: 925px;
-	width: 85%;
-	margin: auto;
+	max-width: 640px;
+	width: 82%;
+	margin-left: 8%;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-style: solid;
@@ -83,6 +81,8 @@ div.maincontent {
 
 .subcontent {
 	margin-top: 30px;
+	max-width: 925px;
+	/* width: 70%; */
 }
 
 h1 {
@@ -170,9 +170,10 @@ input.button:hover {
 /*Flexbox children*/
 .container {
 	position: relative;
-	max-width: 300px;
+	/* max-width: 285px; */
+	max-width: 46%;
 	height: 200px;
-	width: 98%;
+	/* width: 98%; */
 	margin-right: 20px;
 	margin-bottom: 35px;
 }
@@ -208,9 +209,7 @@ p.tport {
 }
 
 @media only screen and (max-width: 980px) {
-	.container {
-	max-width: 300px;
-	}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -220,15 +219,12 @@ p.tport {
 	img {
 	width: 60%;
 	}
-	.container {
-	max-width: 300px;
+	.headercontent {
+		margin: auto;
 	}
 }
 
 @media only screen and (max-width: 640px) {
-    div.maincontent {
-	margin: auto;
-	}
 	nav {
 	text-align: center;
     background-color: #ffffff;
@@ -262,9 +258,9 @@ p.tport {
 	.container {
 	max-width: 600px;
 	margin: 0px 0px 35px 0px;
-	height: 300px;
+	height: 350px;
 	}
 	img.port {
-	height: 300px;
+	height: 350px;
 	}
 }
