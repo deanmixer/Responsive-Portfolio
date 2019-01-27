@@ -178,6 +178,21 @@ input.button:hover {
 	margin-bottom: 35px;
 }
 
+.contactFlex {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.containerCon {
+	position: relative;
+/*	flex-grow: 1;*/
+	margin-bottom: 20px;
+}
+
 img.port {
 /*	width: 298px;
 	height: 198px;*/
@@ -192,8 +207,8 @@ img.port {
 p.tport {
 	background-color: #4aaaa5;
 	color: white;
-	margin: 20px 0px 5px 0px;
-	padding: 6px 0px 6px 0px;
+	margin: 20px 0px 0px 0px;
+	padding: 3px 0px 20px 0px;
 	opacity: 0.9;
 	text-align: center;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -202,17 +217,49 @@ p.tport {
 /*    width: 300px;*/
 	width: 100%;
     right: -2px;
-    bottom: 2px;
+    bottom: -2px;
 	border-color: #dddddd;
 	border-style: solid;
 	border-width: 0px 1px 0px 1px;
+}
+
+p.deployedLink {
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.9;
+	text-align: left;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+/*	width: 100%;*/
+    left: 39%;
+    bottom: -4px;
+}
+
+p.githubLink {
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.9;
+	text-align: right;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+/*	width: 100%;*/
+    right: 39%;
+    bottom: -4px;
+}
+
+#linkIcon {
+	color: white;
 }
 
 @media only screen and (max-width: 980px) {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
     div.maincontent {
 	margin: auto;
 	}
@@ -259,6 +306,9 @@ p.tport {
 	max-width: 600px;
 	margin: 0px 0px 35px 0px;
 	height: 350px;
+	}
+	.containerCon {
+		width: 100%;
 	}
 	img.port {
 	height: 350px;
